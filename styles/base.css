@@ -2,7 +2,7 @@
     --primary-color: #194d6e;
     --secondary-color: #070308;
     --accent1-color: #dee5e7;
-    --accent2-color: #239128;
+    --accent2-color: #73e878;
     --heading-text-color: white;
     --heading-font: Roboto, Helvetica, sans-serif;
     --text-font: Montserrat, Helvetica, sans-serif;
@@ -325,7 +325,7 @@ figure figcaption {
 .course-name.completed {
     font-size: 0.9rem;
     font-family: var(--text-font), serif;
-    color: white;
+    color: black;
 }
 
 .course-card.completed {
@@ -334,7 +334,7 @@ figure figcaption {
     font-weight: bold;
     font-family: var(--text-font), serif;
     background: var(--accent2-color);
-    color: white;
+    color: black;
 }
 
 .display-credits {
