@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Travis Nelson">
+    <meta name="description" content="Mantua Chamber of Commerce Directory - Find local businesses and services">
+    <title>Mantua Chamber of Commerce Directory - WDD 231</title>
+
+    <!-- Facebook Open Graph Meta Tags -->
+    <meta property="og:title" content="Mantua Chamber of Commerce Directory">
+    <meta property="og:description"
+          content="Find local businesses and services in Mantua. Connect with the community and discover what Mantua has to offer.">
+    <meta property="og:image" content="images/favicon.png">
+    <meta property="og:url" content="https://byui-logicLover.github.io/wdd231/chamber/directory.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>
+    <script src="../scripts/navigation.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+<header>
+    <figure id="page-header">
+        <img src="images/mantua-chamber-logo.png" alt="Mantua Chamber of Commerce Logo"/>
+        <figcaption>Mantua Chamber of Commerce</figcaption>
+    </figure>
+    <div class="trigram">☰</div>
+    <div class="cross">╳</div>
+</header>
+<nav class="navigation">
+    <ul id="nav-list">
+        <li><a href="directory.html">Home</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <figure id="hero-image">
+        <img src="images/hero.jpeg" alt="Mantua Reservoir"/>
+        <figcaption>Mantua Reservoir</figcaption>
+    </figure>
+    <h1>Home</h1>
+    <div class="main-content">
+        <section class="left-section">
+            <h2>Events</h2>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+                <li>Event 3</li>
+            </ul>
+        </section>
+        <section class="middle-section">
+            <h2>Current Weather</h2>
+        </section>
+        <section class="right-section">
+            <h2>Weather Forecast</h2>
+        </section>
+    </div>
+    <div id="directory-container" class="grid">
+        <!-- Member cards here -->
+    </div>
+</main>
+<footer>
+    <div class="main-content">
+        <div class="info-section">
+            <p class="info-section-title">Mantua Chamber of Commerce</p>
+            <p>1023 North Main</p>
+            <p>Mantua, Utah 84324</p>
+            <p>info@mantua.com</p>
+            <p>(435) 555-1212</p>
+        </div>
+        <div class="social-section">
+            <ul>
+                <li><a href="https://www.facebook.com/mantuachamber" target="_blank"><img src="images/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://www.instagram.com/mantuachamber" target="_blank"><img src="images/x.webp" alt="x"></a></li>
+                <li><a href="https://www.twitter.com/mantuachamber" target="_blank"><img src="images/linkedin.png" alt="linked in"></a></li>
+            </ul>
+        </div>
+        <div class="author-section">
+            <p>WDD231 Class Project</p>
+            <p>Travis Nelson</p>
+            <p>&copy;<span id="currentYear"></span> Mantua Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

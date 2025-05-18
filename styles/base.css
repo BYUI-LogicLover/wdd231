@@ -29,18 +29,19 @@ body {
     justify-content: center;
     align-items: center;
     font-family: var(--heading-font), serif;
+    height: 200px;
 }
 
 #page-header img {
     border-radius: 15%;
     width: 150px;
-    height: 150px;
+    height: auto;
     border: var(--border);
 }
 
 #page-header h1 {
-    font-family: var(--text-font), serif;
-    font-size: 3.0rem;
+    font-family: var(--heading-font), serif;
+    font-size: 2.5rem;
     color: var(--heading-text-color);
     margin-left: 20px;
     margin-top: 20px;

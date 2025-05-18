@@ -1,0 +1,83 @@
+[
+  {
+    "name": "Mantua General Store",
+    "address": "123 Main Street, Mantua, UT 84324",
+    "phone": "(435) 555-1234",
+    "website": "https://www.mantuageneralstore.com",
+    "image": "general-store.jpg",
+    "membershipLevel": 3,
+    "description": "Your one-stop shop for groceries, hardware, and local goods."
+  },
+  {
+    "name": "Alpine Outdoors",
+    "address": "456 Mountain View Drive, Mantua, UT 84324",
+    "phone": "(435) 555-2345",
+    "website": "https://www.alpineoutdoors.com",
+    "image": "alpine-outdoors.jpg",
+    "membershipLevel": 2,
+    "description": "Outdoor gear and equipment for hiking, camping, and fishing."
+  },
+  {
+    "name": "Mantua Family Dental",
+    "address": "789 Health Way, Mantua, UT 84324",
+    "phone": "(435) 555-3456",
+    "website": "https://www.mantuadental.com",
+    "image": "dental-clinic.jpg",
+    "membershipLevel": 3,
+    "description": "Comprehensive dental care for the whole family."
+  },
+  {
+    "name": "Valley Real Estate",
+    "address": "321 Home Street, Mantua, UT 84324",
+    "phone": "(435) 555-4567",
+    "website": "https://www.valleyrealestate.com",
+    "image": "real-estate.jpg",
+    "membershipLevel": 2,
+    "description": "Helping families find their dream homes in Mantua and surrounding areas."
+  },
+  {
+    "name": "Lakeside Cafe",
+    "address": "654 Waterfront Road, Mantua, UT 84324",
+    "phone": "(435) 555-5678",
+    "website": "https://www.lakesidecafe.com",
+    "image": "cafe.jpg",
+    "membershipLevel": 1,
+    "description": "Cozy cafe with a beautiful view of Mantua Reservoir."
+  },
+  {
+    "name": "Mountain Auto Repair",
+    "address": "987 Mechanic Lane, Mantua, UT 84324",
+    "phone": "(435) 555-6789",
+    "website": "https://www.mountainauto.com",
+    "image": "auto-repair.jpg",
+    "membershipLevel": 1,
+    "description": "Quality auto repair services with honest pricing."
+  },
+  {
+    "name": "Mantua Pharmacy",
+    "address": "246 Health Avenue, Mantua, UT 84324",
+    "phone": "(435) 555-7890",
+    "website": "https://www.mantuapharmacy.com",
+    "image": "pharmacy.jpg",
+    "membershipLevel": 2,
+    "description": "Your local pharmacy providing prescriptions and healthcare products."
+  },
+  {
+    "name": "Valley Bank",
+    "address": "135 Financial Street, Mantua, UT 84324",
+    "phone": "(435) 555-8901",
+    "website": "https://www.valleybank.com",
+    "image": "bank.jpg",
+    "membershipLevel": 3,
+    "description": "Serving the financial needs of Mantua residents for over 50 years."
+  },
+  {
+    "name": "Mantua Hardware",
+    "address": "579 Builder Avenue, Mantua, UT 84324",
+    "phone": "(435) 555-9012",
+    "website": "https://www.mantuahardware.com",
+    "image": "hardware.jpg",
+    "membershipLevel": 1,
+    "description": "Tools, building materials, and expert advice for all your DIY projects."
+  }
+]

@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .trigram {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    .cross {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    nav {
+        visibility: visible !important;
+        display: flex !important;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: left;
+        width: 100%;
+        background: var(--secondary-color);
+    }
+
+    .navigation ul li a {
+        color: var(--heading-text-color);
+        padding: 0.75rem;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        width: 100%;
+    }
+
+}

@@ -2,21 +2,22 @@
 <html lang="en-US">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Travis Nelson">
-  <meta name="description" content="WDD 231 - Web Frontend Development I | Travis Nelson | To showcase my work in WDD231">
-  <title>WDD 231 - Web Frontend Development I - Travis Nelson</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" type="image/x-icon" href="images/favicon.png">
-  <link rel="stylesheet" href="styles/base.css">
-  <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet">
-  <script src="scripts/date.js" defer></script>
-  <script src="scripts/course.js" defer></script>
-  <script src="scripts/navigation.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Travis Nelson">
+    <meta name="description"
+          content="WDD 231 - Web Frontend Development I | Travis Nelson | To showcase my work in WDD231">
+    <title>WDD 231 - Web Frontend Development I - Travis Nelson</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/base.css">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </head>
 
 <body>
@@ -25,51 +26,52 @@
     <img id="profileImage" src="images/profile.jpg" alt="Travis Nelson">
     <h1>Travis J. Nelson</h1>
   </span>
-  <div class="trigram">☰</div>
-  <div class="cross">╳</div>
+    <div class="trigram">☰</div>
+    <div class="cross">╳</div>
 </header>
 <nav class="navigation">
-  <ul id="nav-list">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Chamber</a></li>
-    <li><a href="#">Final</a></li>
-    <li><a target="_blank" href="https://github.com/BYUI-LogicLover">GitHub Profile</a></li>
-    <li><a target="_blank" href="http://www.linkedin.com/in/wrapperclass">LinkedIn</a></li>
-  </ul>
+    <ul id="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="chamber/directory.html">Chamber</a></li>
+        <li><a href="#">Final</a></li>
+        <li><a target="_blank" href="https://github.com/BYUI-LogicLover">GitHub Profile</a></li>
+        <li><a target="_blank" href="http://www.linkedin.com/in/wrapperclass">LinkedIn</a></li>
+    </ul>
 </nav>
 <main>
-  <h1>Home</h1>
-  <div class="main-content">
-    <section class="left-section">
-      <h2>Course Work</h2>
-      <ul>
-        <li>Course 1</li>
-        <li>Course 2</li>
-        <li>Course 3</li>
-      </ul>
-    </section>
-    <section class="right-section">
-      <h2>Utah, USA</h2>
-      <figure>
-        <img src="images/arch-sunset.jpg" alt="Utah Arch" class="utah-image">
-        <figcaption>Utah Arch</figcaption>
-      </figure>
-    </section>
-  </div>
-  <section class="bottom-section">
-    <h2>Web and Computer Programming Certificate</h2>
-    <div class="courses-nav">
-      <button id="all-button" type="button" class="active">All</button>
-      <button id="cse-button" type="button">CSE</button>
-      <button id="wdd-button" type="button">WDD</button>
+    <h1>Home</h1>
+    <div class="main-content">
+        <section class="left-section">
+            <h2>Course Work</h2>
+            <ul>
+                <li>Course 1</li>
+                <li>Course 2</li>
+                <li>Course 3</li>
+            </ul>
+        </section>
+        <section class="right-section">
+            <h2>Utah, USA</h2>
+            <figure>
+                <img src="images/arch-sunset.jpg" alt="Utah Arch" class="utah-image">
+                <figcaption>Utah Arch</figcaption>
+            </figure>
+        </section>
     </div>
-    <div id="courses" class="display-courses"></div>
-    <div id="total-credits" class="display-credits"></div>
-  </section>
+    <section class="bottom-section">
+        <h2>Web and Computer Programming Certificate</h2>
+        <div class="courses-nav">
+            <button id="all-button" type="button" class="active">All</button>
+            <button id="cse-button" type="button">CSE</button>
+            <button id="wdd-button" type="button">WDD</button>
+        </div>
+        <div id="courses" class="display-courses"></div>
+        <div id="total-credits" class="display-credits"></div>
+    </section>
 </main>
 <footer>
-  <p>&copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah<img id="flag" src="images/utah-flag.jpg" alt="Utah Flag"></p>
-  <p>Last Update: <span id="lastModified"></span></p>
+    <p>&copy;<span id="currentYear"></span>&nbsp;✌🏻Travis Nelson✌🏻&nbsp;Utah<img id="flag" src="images/utah-flag.jpg"
+                                                                                 alt="Utah Flag"></p>
+    <p>Last Update: <span id="lastModified"></span></p>
 </footer>
 </body>
 </html>
