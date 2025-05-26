@@ -31,16 +31,28 @@ function displayMembers(members, viewMode) {
         }
     }
 
-    members.forEach(member => {
-        const memberCard = document.createElement('div');
-        memberCard.className = 'member-card';
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
 
-        // Add membership level class for styling
-        memberCard.classList.add(`level-${member.membershipLevel}`);
+    // In displayMembers function:
+    const highTierMembers = members.filter(member => member.membershipLevel > 1);
+    shuffleArray(highTierMembers)
+        .slice(0, 3)
+        .forEach(member => {
+            const memberCard = document.createElement('div');
+            memberCard.className = 'member-card';
 
-        if (viewMode === 'grid') {
-            // Grid view layout
-            memberCard.innerHTML = `
+            // Add membership level class for styling 
+            memberCard.classList.add(`level-${member.membershipLevel}`);
+
+            if (viewMode === 'grid') {
+                // Grid view layout
+                memberCard.innerHTML = `
                 <div class="member-image">${member.name.charAt(0)}</div>
                 <h2>${member.name}</h2>
                 <p class="membership-level">${getMembershipLevel(member.membershipLevel)}</p>
@@ -49,9 +61,9 @@ function displayMembers(members, viewMode) {
                 <p><a href="${member.website}" target="_blank">Website</a></p>
                 <p class="description">${member.description}</p>
             `;
-        } else {
-            // List view layout
-            memberCard.innerHTML = `
+            } else {
+                // List view layout
+                memberCard.innerHTML = `
                 <div class="list-content">
                     <div class="list-main">
                         <h2>${member.name}</h2>
@@ -64,10 +76,10 @@ function displayMembers(members, viewMode) {
                     </div>
                 </div>
             `;
-        }
+            }
 
-        container.appendChild(memberCard);
-    });
+            container.appendChild(memberCard);
+        });
 }
 
 // Function to initialize the directory page
