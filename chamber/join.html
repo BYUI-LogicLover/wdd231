@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Travis Nelson">
+  <meta name="description" content="Join the Mantua Chamber of Commerce - Membership application and benefits">
+  <title>Join - Mantua Chamber of Commerce - WDD 231</title>
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Mantua Chamber of Commerce Directory">
+  <meta property="og:description"
+        content="Find local businesses and services in Mantua. Connect with the community and discover what Mantua has to offer.">
+  <meta property="og:image" content="images/favicon.png">
+  <meta property="og:url" content="https://byui-logicLover.github.io/wdd231/chamber/directory.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  <script src="../scripts/date.js" defer></script>
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+<header>
+  <figure id="page-header">
+    <img src="images/mantua-chamber-logo.png" alt="Mantua Chamber of Commerce Logo"/>
+    <figcaption>Mantua Chamber of Commerce</figcaption>
+  </figure>
+  <div class="trigram">☰</div>
+  <div class="cross">╳</div>
+</header>
+<nav class="navigation">
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="join-container">
+    <section class="form-section">
+      <h1>Join the Mantua Chamber of Commerce</h1>
+      <form action="thankyou.html" method="get" class="membership-form">
+        <label for="firstName">
+          First Name
+          <input type="text" id="firstName" name="firstName" title="First Name" required autocomplete="given-name">
+        </label>
+
+        <label for="lastName">
+          Last Name
+          <input type="text" id="lastName" name="lastName" title="Last Name" required autocomplete="family-name">
+        </label>
+
+        <label for="orgTitle">
+          Organizational Title
+          <input type="text" id="orgTitle" name="orgTitle" title="Please enter at least 7 characters using only letters, spaces, and hyphens" autocomplete="organization-title" 
+                 pattern="[A-Za-z\s\-]{7,}">
+        </label>
+
+        <label for="email">
+          Email Address
+          <input type="email" id="email" name="email" title="Email Address" required autocomplete="email" 
+                 placeholder="example@email.com">
+        </label>
+
+        <label for="phone">
+          Mobile Phone
+          <input type="tel" id="phone" name="phone" title="Mobile Phone" required autocomplete="tel">
+        </label>
+
+        <label for="orgName">
+          Business/Organization Name
+          <input type="text" id="orgName" name="orgName" title="Business/Organization Name" required autocomplete="organization">
+        </label>
+
+        <fieldset class="membership-level">
+          <legend>Membership Level</legend>
+          <label for="np">
+            <input type="radio" id="np" name="membershipLevel" value="NP" required>
+            NP Membership (Non-Profit - No Fee)
+          </label>
+          <label for="bronze">
+            <input type="radio" id="bronze" name="membershipLevel" value="Bronze" required>
+            Bronze Membership
+          </label>
+          <label for="silver">
+            <input type="radio" id="silver" name="membershipLevel" value="Silver" required>
+            Silver Membership
+          </label>
+          <label for="gold">
+            <input type="radio" id="gold" name="membershipLevel" value="Gold" required>
+            Gold Membership
+          </label>
+        </fieldset>
+
+        <label for="description">
+          Business/Organization Description
+          <textarea id="description" name="description" title="Business/Organization Description" rows="4"></textarea>
+        </label>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+
+        <input type="submit" value="Submit Application">
+      </form>
+    </section>
+
+    <section class="membership-cards">
+      <h2>Membership Levels</h2>
+      <div class="cards-container">
+        <div class="membership-card np-card">
+          <h3>NP Membership</h3>
+          <p>For Non-Profit Organizations</p>
+          <p class="price">No Fee</p>
+          <button type="button" onclick="openModal('npModal')">Learn More</button>
+        </div>
+
+        <div class="membership-card bronze-card">
+          <h3>Bronze Membership</h3>
+          <p>Basic Business Benefits</p>
+          <p class="price">$200/year</p>
+          <button type="button" onclick="openModal('bronzeModal')">Learn More</button>
+        </div>
+
+        <div class="membership-card silver-card">
+          <h3>Silver Membership</h3>
+          <p>Enhanced Business Benefits</p>
+          <p class="price">$400/year</p>
+          <button type="button" onclick="openModal('silverModal')">Learn More</button>
+        </div>
+
+        <div class="membership-card gold-card">
+          <h3>Gold Membership</h3>
+          <p>Premium Business Benefits</p>
+          <p class="price">$750/year</p>
+          <button type="button" onclick="openModal('goldModal')">Learn More</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modals -->
+  <div id="npModal" class="modal">
+    <div class="modal-content">
+      <span class="close" role="button" tabindex="0" onclick="closeModal('npModal')" onkeydown="handleCloseKeydown(event, 'npModal')">&times;</span>
+      <h3>NP Membership Benefits</h3>
+      <ul>
+        <li>Directory listing</li>
+        <li>Access to networking events</li>
+        <li>Monthly newsletter</li>
+        <li>Community event announcements</li>
+        <li>Non-profit resource sharing</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="bronzeModal" class="modal">
+    <div class="modal-content">
+      <span class="close" role="button" tabindex="0" onclick="closeModal('bronzeModal')" onkeydown="handleCloseKeydown(event, 'bronzeModal')">&times;</span>
+      <h3>Bronze Membership Benefits</h3>
+      <ul>
+        <li>Directory listing with contact information</li>
+        <li>Access to all networking events</li>
+        <li>Monthly newsletter and business tips</li>
+        <li>Event announcements and calendar access</li>
+        <li>Basic business resources</li>
+        <li>10% discount on chamber events</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="silverModal" class="modal">
+    <div class="modal-content">
+      <span class="close" role="button" tabindex="0" onclick="closeModal('silverModal')" onkeydown="handleCloseKeydown(event, 'silverModal')">&times;</span>
+      <h3>Silver Membership Benefits</h3>
+      <ul>
+        <li>Enhanced directory listing with logo</li>
+        <li>Priority access to networking events</li>
+        <li>Weekly newsletter and industry insights</li>
+        <li>Free advertising in monthly bulletin</li>
+        <li>Business training workshops</li>
+        <li>20% discount on chamber events</li>
+        <li>Spotlight feature on homepage (quarterly)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="goldModal" class="modal">
+    <div class="modal-content">
+      <span class="close" role="button" tabindex="0" onclick="closeModal('goldModal')" onkeydown="handleCloseKeydown(event, 'goldModal')">&times;</span>
+      <h3>Gold Membership Benefits</h3>
+      <ul>
+        <li>Premium directory listing with multiple photos</li>
+        <li>VIP access to all events and special member events</li>
+        <li>Daily business newsletter and market reports</li>
+        <li>Free monthly advertising in all publications</li>
+        <li>Exclusive business training and mentorship</li>
+        <li>30% discount on all chamber events</li>
+        <li>Monthly spotlight feature on homepage</li>
+        <li>Ribbon cutting ceremony for new businesses</li>
+        <li>Direct referral program</li>
+      </ul>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="main-content">
+    <div class="info-section">
+      <p class="info-section-title">Mantua Chamber of Commerce</p>
+      <p>1023 North Main</p>
+      <p>Mantua, Utah 84324</p>
+      <p>info@mantua.com</p>
+      <p>(435) 555-1212</p>
+    </div>
+    <div class="social-section">
+      <ul>
+        <li><a href="https://www.facebook.com/mantuachamber" target="_blank"><img src="images/facebook-icon.svg" alt="facebook"></a></li>
+        <li><a href="https://www.x.com/mantuachamber" target="_blank"><img src="images/x-icon.svg" alt="x"></a></li>
+        <li><a href="https://www.linkedin.com/mantuachamber" target="_blank"><img src="images/linkedin-icon.svg" alt="linked in"></a></li>
+      </ul>
+    </div>
+    <div class="author-section">
+      <p>WDD231 Class Project</p>
+      <p>Travis Nelson</p>
+      <p>&copy;<span id="currentYear"></span> Mantua Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

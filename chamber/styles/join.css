@@ -1,0 +1,567 @@
+@media screen and (max-width: 767px) {
+    .join-container {
+        flex-direction: column;
+    }
+
+    .membership-cards {
+        order: 2;
+    }
+
+    .form-section {
+        order: 1;
+    }
+}
+
+/* Join Page Styles */
+.join-container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-section {
+    flex: 1;
+    background-color: var(--accent1-color);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h1 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.membership-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    color: var(--secondary-color);
+    font-family: var(--text-font);
+}
+
+.membership-form input,
+.membership-form textarea {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--text-font);
+    font-size: 1rem;
+}
+
+.membership-form input:focus,
+.membership-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(25, 77, 110, 0.3);
+}
+
+.membership-level {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.membership-level legend {
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0 0.5rem;
+}
+
+.membership-level label {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    font-weight: normal;
+}
+
+.membership-level input[type="radio"] {
+    margin: 0;
+    width: auto;
+}
+
+.membership-form input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.membership-form input[type="submit"]:hover {
+    background-color: #0f3a52;
+}
+
+/* Membership Cards */
+.membership-cards {
+    flex: 1;
+    max-width: 500px;
+}
+
+.membership-cards h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-card {
+    background: linear-gradient(135deg, var(--accent1-color), #f0f8ff);
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: slideInRight 0.6s ease-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.membership-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.membership-card p {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.membership-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--accent2-color);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.membership-card button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.membership-card button:hover {
+    background-color: #0f3a52;
+}
+
+/* Special card colors */
+.np-card {
+    background: linear-gradient(135deg, #e8f5e8, #d4f1d4);
+}
+
+.bronze-card {
+    background: linear-gradient(135deg, #f4e4bc, #e6d3a3);
+}
+
+.silver-card {
+    background: linear-gradient(135deg, #e5e5e5, #d1d1d1);
+}
+
+.gold-card {
+    background: linear-gradient(135deg, #fff3cd, #ffe69c);
+}
+
+/* Animations */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    animation: slideIn 0.3s ease;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: var(--primary-color);
+}
+
+.modal-content h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+
+.modal-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.modal-content li {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design for join page */
+@media screen and (max-width: 767px) {
+    .join-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .membership-cards {
+        order: 2;
+        max-width: none;
+    }
+
+    .form-section {
+        order: 1;
+    }
+
+    .membership-card {
+        animation: slideInUp 0.6s ease-out;
+    }
+
+    @keyframes slideInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .modal-content {
+        margin: 10% auto;
+        width: 95%;
+        padding: 1.5rem;
+    }
+}
+
+/* Thank You Page Styles */
+.thankyou-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.thankyou-content {
+    background-color: var(--accent1-color);
+    border-radius: 10px;
+    padding: 3rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.6s ease-out;
+}
+
+.thankyou-content h1 {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.success-icon {
+    font-size: 4rem;
+    color: var(--accent2-color);
+    background-color: #e8f5e8;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thank-message {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.application-details {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.application-details h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+}
+
+.info-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid var(--primary-color);
+}
+
+.info-item strong {
+    color: var(--primary-color);
+    min-width: 200px;
+    flex-shrink: 0;
+}
+
+.info-item span {
+    color: var(--secondary-color);
+    text-align: right;
+    word-break: break-word;
+}
+
+.no-data {
+    text-align: center;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+.no-data a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.no-data a:hover {
+    text-decoration: underline;
+}
+
+.next-steps {
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 2rem 0;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.next-steps h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: transparent;
+    padding: 0;
+}
+
+.next-steps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.next-steps li {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    border-left: 4px solid var(--accent2-color);
+    color: var(--secondary-color);
+    position: relative;
+    padding-left: 3rem;
+}
+
+.next-steps li::before {
+    content: '✓';
+    position: absolute;
+    left: 1rem;
+    color: var(--accent2-color);
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0f3a52;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Responsive styles for thank you page */
+@media screen and (max-width: 767px) {
+    .thankyou-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .thankyou-content {
+        padding: 2rem 1rem;
+    }
+
+    .thankyou-content h1 {
+        font-size: 2rem;
+    }
+
+    .success-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 3rem;
+    }
+
+    .info-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .info-item strong {
+        min-width: auto;
+    }
+
+    .info-item span {
+        text-align: left;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}

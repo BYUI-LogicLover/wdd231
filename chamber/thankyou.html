@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Travis Nelson">
+  <meta name="description" content="Thank you for joining the Mantua Chamber of Commerce">
+  <title>Thank You - Mantua Chamber of Commerce - WDD 231</title>
+
+  <!-- Facebook Open Graph Meta Tags -->
+  <meta property="og:title" content="Thank You - Mantua Chamber of Commerce">
+  <meta property="og:description"
+        content="Thank you for your membership application to the Mantua Chamber of Commerce.">
+  <meta property="og:image" content="images/favicon.png">
+  <meta property="og:url" content="https://byui-logicLover.github.io/wdd231/chamber/thankyou.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="styles/directory.css">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
+  <script src="../scripts/date.js" defer></script>
+  <script src="../scripts/navigation.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+<header>
+  <figure id="page-header">
+    <img src="images/mantua-chamber-logo.png" alt="Mantua Chamber of Commerce Logo"/>
+    <figcaption>Mantua Chamber of Commerce</figcaption>
+  </figure>
+  <div class="trigram">☰</div>
+  <div class="cross">╳</div>
+</header>
+<nav class="navigation">
+  <ul id="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="join.html">Join</a></li>
+    <li><a href="#">Events</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<main>
+  <div class="thankyou-container">
+    <div class="thankyou-content">
+      <h1>Thank You!</h1>
+      <div class="success-icon">✓</div>
+      <p class="thank-message">Your membership application has been successfully submitted to the Mantua Chamber of Commerce.</p>
+      
+      <div class="application-details">
+        <h2>Application Summary</h2>
+        <div id="application-info">
+          <!-- JavaScript will populate this section -->
+        </div>
+      </div>
+
+      <div class="next-steps">
+        <h2>What's Next?</h2>
+        <ul>
+          <li>You will receive a confirmation email within 24 hours</li>
+          <li>A chamber representative will contact you within 2-3 business days</li>
+          <li>Your membership benefits will be activated upon approval</li>
+          <li>You'll receive your welcome packet and membership materials</li>
+        </ul>
+      </div>
+
+      <div class="action-buttons">
+        <a href="index.html" class="btn btn-primary">Return to Home</a>
+        <a href="directory.html" class="btn btn-secondary">View Directory</a>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="main-content">
+    <div class="info-section">
+      <p class="info-section-title">Mantua Chamber of Commerce</p>
+      <p>1023 North Main</p>
+      <p>Mantua, Utah 84324</p>
+      <p>info@mantua.com</p>
+      <p>(435) 555-1212</p>
+    </div>
+    <div class="social-section">
+      <ul>
+        <li><a href="https://www.facebook.com/mantuachamber" target="_blank"><img src="images/facebook-icon.svg" alt="facebook"></a></li>
+        <li><a href="https://www.x.com/mantuachamber" target="_blank"><img src="images/x-icon.svg" alt="x"></a></li>
+        <li><a href="https://www.linkedin.com/mantuachamber" target="_blank"><img src="images/linkedin-icon.svg" alt="linked in"></a></li>
+      </ul>
+    </div>
+    <div class="author-section">
+      <p>WDD231 Class Project</p>
+      <p>Travis Nelson</p>
+      <p>&copy;<span id="currentYear"></span> Mantua Chamber of Commerce</p>
+      <p>Last Modification: <span id="lastModified"></span></p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
