@@ -1,0 +1,248 @@
+:root {
+    --primary-color: #244260;
+    --secondary-color: #FF9900;
+    --accent1-color: #dbe1e3;
+    --accent2-color: #daefd6;
+    --accent3-color: #fbe8a8;
+    --heading-text-color: white;
+    --heading-font: Roboto, Helvetica, sans-serif;
+    --text-font: Montserrat, Helvetica, sans-serif;
+    --padding: 1rem;
+    --border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+body {
+    max-width: 1500px;
+    margin: 0 auto;
+    align-content: center;
+}
+
+#page-header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: var(--primary-color);
+}
+
+#page-header img {
+    width: 250px;
+    height: auto;
+}
+
+#page-header p {
+    margin: 0;
+    font-size: 4.2rem;
+    font-family: var(--heading-font), serif;
+    color: var(--heading-text-color);
+}
+
+section p {
+    font-family: var(--text-font), sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+}
+
+section li {
+    font-family: var(--text-font), sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--primary-color);
+    padding-left: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', 'Roboto', sans-serif; }
+
+h1 {
+    background-color: var(--primary-color);
+    color: var(--heading-text-color);
+    font-family: var(--heading-font), serif;
+    padding: var(--padding);
+    margin: 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+
+nav {
+    background-color: var(--secondary-color);
+    font-family: var(--heading-font), serif;
+    font-weight: bold;
+    text-decoration-color: black;
+    text-align: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card .content {
+    display: flex;
+    padding: 1.5rem;
+}
+
+.card .text {
+    flex: 3;
+}
+
+.card .images {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.card h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    margin: 1.5rem 0 1rem 0;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 1rem;
+}
+
+/* Web Dev Resources specific styles */
+.card ul {
+    list-style-type: disc;
+    padding: 2rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.card li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card li a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card .content {
+        flex-direction: column;
+    }
+
+    .card .images {
+        padding-left: 0;
+        margin-top: 1.5rem;
+    }
+}
+
+footer {
+    background-color: var(--primary-color);
+    font-family: var(--heading-font), serif;
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.welcome-section {
+    display: flex;
+    align-items: flex-start;
+}
+
+.welcome-text {
+    text-align: left;
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.profile-image {
+    margin-right: 10px;
+    align-self: flex-start;
+    height: auto;
+    max-width: 200px;
+}
+
+.flag-image {
+    margin: 0 auto;
+    width: 350px;
+    display: block;
+}
+
+.flag-text {
+    flex: 1;
+    padding-right: 10px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.flag-container {
+    text-align: left;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.flag-caption {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.about-me {
+    flex: 2;
+    padding-right: 10px;
+}
+
+.web-dev-resources {
+    flex: 1;
+    padding-left: 10px;
+}
