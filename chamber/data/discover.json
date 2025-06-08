@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mantua Reservoir",
+    "address": "Mantua Reservoir Rd, Mantua, UT 84324",
+    "description": "A scenic 500-acre mountain reservoir at 5,000 feet elevation, perfect for fishing, boating, and water skiing. The reservoir features a 4-mile gravel trail around its perimeter, ideal for walking, biking, and horseback riding with stunning mountain views.",
+    "image": "mantua-reservoir.webp"
+  },
+  {
+    "id": 2,
+    "name": "Willard Peak Trail",
+    "address": "Willard Peak Rd, Mantua, UT 84324",
+    "description": "Weber County's highest peak offering breathtaking panoramic views of the Great Salt Lake, Ogden Valley, and Cache Valley. This challenging hike rewards adventurers with spectacular vistas from 9,764 feet above sea level.",
+    "image": "willard-peak.webp"
+  },
+  {
+    "id": 3,
+    "name": "Historic Mantua Lime Kiln",
+    "address": "1 mile north of Mantua on Maple Creek, Mantua, UT 84324",
+    "description": "Built in 1892 by James W. Sheffield, this historic lime kiln supplied construction materials for much of northern Utah. One of only two remaining lime kilns in the Brigham City area, it represents an important piece of local industrial heritage.",
+    "image": "lime-kiln.webp"
+  },
+  {
+    "id": 4,
+    "name": "Mantua Poppy Fields",
+    "address": "Near Mantua Reservoir, Mantua, UT 84324",
+    "description": "Stunning wildflower displays that bloom in late May and early June each year. These vibrant poppy fields create a spectacular natural carpet of color against the mountain backdrop, making it a favorite spot for family photography.",
+    "image": "poppy-fields.webp"
+  },
+  {
+    "id": 5,
+    "name": "Inspiration Point",
+    "address": "Willard Peak Rd, Mantua, UT 84324",
+    "description": "A high mountain overlook at 9,412 feet elevation accessible by scenic mountain road. Features historical terracing work completed by the Civilian Conservation Corps in the 1930s and offers commanding views of the surrounding valleys.",
+    "image": "inspiration-point.webp"
+  },
+  {
+    "id": 6,
+    "name": "Mantua Fish Hatchery",
+    "address": "Southeast side of Maple Creek, Mantua, UT 84324",
+    "description": "One of Mantua's oldest businesses, established for improving Bear Lake Cutthroat trout populations. Purchased by the state in 1970, this facility continues to play a vital role in Utah's fish conservation efforts.",
+    "image": "fish-hatchery.webp"
+  },
+  {
+    "id": 7,
+    "name": "Sardine Canyon Scenic Drive",
+    "address": "US-89 through Sardine Canyon, Mantua, UT 84324",
+    "description": "A breathtaking mountain drive connecting Mantua to Logan through dramatic canyon landscapes. This scenic route offers stunning views of towering cliffs, mountain peaks, and the beautiful transition between valleys.",
+    "image": "sardine-canyon.webp"
+  },
+  {
+    "id": 8,
+    "name": "Mantua ATV Trails",
+    "address": "Dock Flats, 2.6 miles up Willard Peak Rd, Mantua, UT 84324",
+    "description": "Popular off-highway vehicle trails offering access to high mountain terrain and spectacular viewpoints. These well-maintained trails provide adventure seekers with access to pristine mountain wilderness and camping opportunities.",
+    "image": "atv-trails.webp"
+  }
+]
