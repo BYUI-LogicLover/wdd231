@@ -51,6 +51,14 @@ section li {
     padding-left: 20px;
 }
 
+.large-view {
+    width: 1500px;
+}
+
+.small-view {
+    width: 700px;
+}
+
 h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', 'Roboto', sans-serif; }
 
 h1 {
