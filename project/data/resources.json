@@ -1,0 +1,168 @@
+{
+  "categories": [
+    {
+      "name": "Video Courses",
+      "icon": "📹",
+      "count": 24
+    },
+    {
+      "name": "Documentation", 
+      "icon": "📖",
+      "count": 156
+    },
+    {
+      "name": "Practice Tests",
+      "icon": "✅", 
+      "count": 18
+    },
+    {
+      "name": "Whitepapers",
+      "icon": "📄",
+      "count": 42
+    },
+    {
+      "name": "Hands-on Labs",
+      "icon": "🧪",
+      "count": 31
+    },
+    {
+      "name": "Code Samples",
+      "icon": "💻",
+      "count": 67
+    },
+    {
+      "name": "Bookmarked",
+      "icon": "⭐",
+      "count": 12
+    }
+  ],
+  "quickLinks": [
+    {
+      "name": "Exam Guides",
+      "icon": "🏆"
+    },
+    {
+      "name": "AWS CLI Reference",
+      "icon": "🔧"
+    },
+    {
+      "name": "Service Comparisons", 
+      "icon": "☁️"
+    },
+    {
+      "name": "Pricing Calculator",
+      "icon": "💰"
+    }
+  ],
+  "recentActivity": [
+    "Completed: EC2 Instance Types",
+    "Bookmarked: VPC Deep Dive", 
+    "Started: Lambda Best Practices"
+  ],
+  "bookmarkedResources": [
+    {
+      "type": "Video",
+      "typeClass": "type-video",
+      "title": "VPC Deep Dive for Solutions Architects",
+      "duration": "3.5 hours",
+      "instructor": "Adrian Cantrill",
+      "certification": "Solutions Architect",
+      "description": "Comprehensive coverage of VPC concepts including subnets, route tables, NAT gateways, and VPC peering for the SA-A03 exam.",
+      "difficulty": 3,
+      "progress": 65,
+      "actionText": "Continue"
+    },
+    {
+      "type": "Code",
+      "typeClass": "type-code", 
+      "title": "Spring Boot with AWS SDK v2 Examples",
+      "duration": "45 mins",
+      "instructor": "GitHub",
+      "certification": "Developer",
+      "description": "Java code samples using Spring Boot with AWS SDK v2 for S3, DynamoDB, Lambda, and SQS integration patterns.",
+      "difficulty": 2,
+      "progress": 100,
+      "actionText": "View Code"
+    }
+  ],
+  "allResources": [
+    {
+      "type": "Practice",
+      "typeClass": "type-practice",
+      "title": "Solutions Architect Practice Exam #3", 
+      "duration": "130 mins",
+      "questions": "65 questions",
+      "certification": "Solutions Architect",
+      "description": "Full-length practice exam with detailed explanations. Covers all SA-A03 domains with emphasis on security and cost optimization.",
+      "difficulty": 4,
+      "progress": 0,
+      "actionText": "Start Exam"
+    },
+    {
+      "type": "Lab",
+      "typeClass": "type-lab",
+      "title": "Building a Serverless Web Application",
+      "duration": "90 mins", 
+      "handson": "Hands-on",
+      "certification": "Developer",
+      "description": "Step-by-step lab building a serverless app with Lambda, API Gateway, DynamoDB, and S3. Includes Python code samples.",
+      "difficulty": 2,
+      "progress": 0,
+      "actionText": "Start Lab"
+    },
+    {
+      "type": "Paper",
+      "typeClass": "type-whitepaper",
+      "title": "AWS Well-Architected Framework",
+      "duration": "2 hours",
+      "pages": "76 pages", 
+      "certification": "All Certs",
+      "description": "Essential reading covering the 6 pillars: operational excellence, security, reliability, performance, cost optimization, and sustainability.",
+      "difficulty": 3,
+      "progress": 40,
+      "actionText": "Read PDF"
+    },
+    {
+      "type": "Docs",
+      "typeClass": "type-doc",
+      "title": "EC2 Instance Types Complete Guide",
+      "duration": "30 mins",
+      "source": "AWS Docs",
+      "certification": "Solutions Architect",
+      "description": "Official AWS documentation covering all EC2 instance families, use cases, and selection criteria for different workloads.",
+      "difficulty": 2,
+      "progress": 100,
+      "actionText": "Read Docs"
+    },
+    {
+      "type": "Video", 
+      "typeClass": "type-video",
+      "title": "AWS Lambda with Java and Spring Boot",
+      "duration": "4.2 hours",
+      "instructor": "Stephane Maarek",
+      "certification": "Developer",
+      "description": "Advanced Lambda development using Java 11+ and Spring Boot with custom runtimes, performance optimization, and best practices.",
+      "difficulty": 4,
+      "progress": 0,
+      "actionText": "Watch"
+    },
+    {
+      "type": "Code",
+      "typeClass": "type-code",
+      "title": "Python Boto3 AWS Automation Scripts",
+      "duration": "1 hour",
+      "language": "Python",
+      "certification": "SysOps", 
+      "description": "Collection of Python scripts for automating AWS tasks: EC2 management, S3 operations, CloudWatch monitoring, and cost reporting.",
+      "difficulty": 3,
+      "progress": 0,
+      "actionText": "View Code"
+    }
+  ],
+  "certTags": ["All", "Solutions Architect", "Developer", "SysOps", "DevOps", "Security"],
+  "filterOptions": {
+    "types": ["All Types", "Video Courses", "Documentation", "Practice Tests", "Whitepapers", "Hands-on Labs", "Code Samples"],
+    "levels": ["All Levels", "Beginner", "Intermediate", "Advanced"],
+    "certifications": ["All Certifications", "Cloud Practitioner", "Solutions Architect", "Developer Associate", "SysOps Administrator", "DevOps Engineer"]
+  }
+}
