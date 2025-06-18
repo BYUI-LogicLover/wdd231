@@ -32,16 +32,35 @@
 
   <div class="main-layout">
     <div class="sidebar">
-      <div class="recent-activity">
+      <div class="card">
+        <div class="card-header">
+          <h2>Recent Activity</h2>
+        </div>
+        <div class="card-content">
+          <div class="recent-activity">
+          </div>
+        </div>
       </div>
 
-      <h3>Categories</h3>
-      <ul class="category-list">
-      </ul>
+      <div class="card">
+        <div class="card-header">
+          <h2>Categories</h2>
+        </div>
+        <div class="card-content">
+          <ul class="category-list">
+          </ul>
+        </div>
+      </div>
 
-      <h3 style="margin-top: 2rem;">Quick Links</h3>
-      <ul class="category-list">
-      </ul>
+      <div class="card" style="margin-top: 2rem;">
+        <div class="card-header">
+          <h2>Quick Links</h2>
+        </div>
+        <div class="card-content">
+          <ul class="category-list">
+          </ul>
+        </div>
+      </div>
     </div>
 
     <div class="main-content">
@@ -61,6 +80,13 @@
 
       <div class="resources-grid">
       </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-item">
+      <div>&copy;<span id="currentYear"></span>&nbsp;AWS Craftsman</div>
+      <div>Last Update: <span id="lastModified"></span></div>
     </div>
   </div>
 </div>

@@ -622,6 +622,7 @@ body {
 .score-good { background: #d4edda; color: #155724; }
 .score-ok { background: #fff3cd; color: #856404; }
 .score-poor { background: #f8d7da; color: #721c24; }
+.score-pending { background: #e2e3e5; color: #383d41; }
 
 .quick-actions {
     grid-column: 1 / -1;

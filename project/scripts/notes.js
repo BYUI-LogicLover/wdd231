@@ -59,20 +59,9 @@ class NotesManager {
                 }
             });
             
-            // Save data to JSON file using a simple POST request
-            const response = await fetch('/save-notes', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(this.data)
-            });
-            
-            if (!response.ok) {
-                // Fallback: save to localStorage for client-side persistence
-                localStorage.setItem('aws-study-notes', JSON.stringify(this.data));
-                console.log('Data saved to localStorage as fallback');
-            }
+            // Save to localStorage for client-side persistence
+            localStorage.setItem('aws-study-notes', JSON.stringify(this.data));
+            console.log('Data saved to localStorage');
             
             // Update filtered notes
             this.filteredNotes = [...this.data.notes];
@@ -80,15 +69,8 @@ class NotesManager {
             
             return true;
         } catch (error) {
-            // Fallback: save to localStorage
-            try {
-                localStorage.setItem('aws-study-notes', JSON.stringify(this.data));
-                console.log('Data saved to localStorage as fallback');
-                return true;
-            } catch (storageError) {
-                console.error('Error saving notes data:', error);
-                return false;
-            }
+            console.error('Error saving notes data:', error);
+            return false;
         }
     }
     
@@ -465,6 +447,10 @@ class NotesManager {
 // Global functions for button clicks
 function showNoteForm() {
     window.notesManager.showNoteForm();
+}
+
+function closeNoteModal() {
+    window.notesManager.hideNoteForm();
 }
 
 function editNote(id) {

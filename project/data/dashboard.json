@@ -12,29 +12,29 @@
   "upcomingExams": [
     {
       "name": "AWS Solutions Architect Associate",
-      "date": "June 28, 2025"
+      "date": "August 25, 2025"
     },
     {
       "name": "AWS Developer Associate", 
-      "date": "August 15, 2025"
+      "date": "December 15, 2025"
     }
   ],
   "activeCertifications": [
     {
       "name": "Solutions Architect Associate",
-      "targetDate": "June 28, 2025",
-      "progress": 75,
+      "targetDate": "August 25, 2025",
+      "progress": 80,
       "status": "Active"
     },
     {
       "name": "Developer Associate",
-      "targetDate": "August 15, 2025", 
+      "targetDate": "November 14, 2025",
       "progress": 35,
       "status": "Planned"
     },
     {
       "name": "DevOps Engineer Professional",
-      "targetDate": "December 2025",
+      "targetDate": "March 2026",
       "progress": 10,
       "status": "Planned"
     }

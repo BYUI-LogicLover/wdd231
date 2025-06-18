@@ -184,6 +184,37 @@ class DashboardManager {
     }
 }
 
+// Function to start a new study session
+function startStudySession() {
+    const topic = prompt("What topic will you be studying?", "AWS Services Review");
+    if (!topic) return;
+    
+    const duration = prompt("How long do you plan to study (in hours)?", "2");
+    if (!duration) return;
+    
+    const hours = parseFloat(duration);
+    if (isNaN(hours) || hours <= 0) {
+        alert("Please enter a valid number of hours.");
+        return;
+    }
+    
+    // Create new study session
+    const newSession = {
+        date: "Today",
+        duration: `${hours} hours - ${topic}`,
+        score: 0, // Will be updated later with actual score
+        scoreClass: "score-pending"
+    };
+    
+    // Add the session and update stats
+    if (window.dashboardManager) {
+        window.dashboardManager.addStudySession(newSession);
+        window.dashboardManager.updateStudyHours(hours);
+    }
+    
+    alert(`Study session started! Topic: ${topic}, Duration: ${hours} hours`);
+}
+
 // Initialize dashboard when DOM is loaded
 document.addEventListener('DOMContentLoaded', async () => {
     const dashboardManager = new DashboardManager();
